@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFDBB6;
+    color: #1A2A4F;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* navbar */
+
+.container {
+    /* position: fixed; */
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    /* border: 2px solid black; */
+    width: 80%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container a {
+    font-size: 25px;
+    color: #1A2A4F;
+    text-decoration: none;
+}
+
+
+.container span {
+    display: inline-block;
+    color: #FFF2F2;
+    background-color: #7886C7;
+    padding: 15px;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+
+.nav_menu_toggle {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_menu_toggle li {
+    list-style: none;
+}
+
+.ri-menu-2-fill {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.menubtn input {
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    margin-left: -35px;
+    width: 35px;
+    height: 35px;
+}
+
+.container .contactbtn,
+.container .logo {
+    padding: 10px 15px;
+    background-color: #1A2A4F;
+    color: #FFF2EF;
+    border-radius: 50px;
+}
+
+/* Akhir Navbar */
+
+
+/* Header */
+
+.header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    height: 800px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.header_image {
+    /* border: 2px solid; */
+    max-width: 460px;
+    /* position: absolute; */
+    /* z-index: -1; */
+    top: 133px;
+    right: 30px;
+}
+
+.header_image img {
+    border: 6px solid #FFF2EF;
+    max-width: 560px;
+    border-radius: 25rem;
+    z-index: -1;
+}
+
+.header_content {
+    margin-top: -100px;
+    text-align: center;
+    /* border: 2px solid; */
+    /* width: 150px; */
+}
+
+.header_content h1 {
+    font-size: 3rem;
+}
+
+/* akhir header */
+
+/* about */
+.about_container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    width: 80%;
+    height: 800px;
+    margin: auto;
+    border: 2px solid;
+}
+
+.about_me {
+    margin-top: 150px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_content {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.box_about {
+    color: #FFF2EF;
+    background-color: #1A2A4F;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 1.6rem;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    border: 2px solid;
+}

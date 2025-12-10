@@ -5,7 +5,9 @@
 }
 
 body {
+    width: 100%;
     background-color: #FFDBB6;
+    /* border: 5px solid red; */
     color: #1A2A4F;
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
@@ -23,7 +25,7 @@ body::-webkit-scrollbar {
     max-width: 80%;
     margin: auto;
     position: relative;
-    /* border: 2px solid black; */
+    /* border: 5px solid red; */
     height: 80px;
     display: flex;
     align-items: center;
@@ -73,10 +75,17 @@ body::-webkit-scrollbar {
 
 .container .contactbtn,
 .container .logo {
+    box-shadow: 3px 3px 5px #00000078;
     padding: 10px 15px;
     background-color: #1A2A4F;
     color: #FFF2EF;
     border-radius: 50px;
+    transition: .3s ease;
+}
+
+.logo:hover,
+.contactbtn:hover {
+    background-color: hsl(222, 50%, 31%);
 }
 
 /* Akhir Navbar */
@@ -85,7 +94,7 @@ body::-webkit-scrollbar {
 /* Header */
 
 .header {
-    /* border: 2px solid red; */
+    /* border: 5px solid red; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -133,7 +142,7 @@ body::-webkit-scrollbar {
     max-width: 80%;
     height: 800px;
     margin: auto;
-    /* border: 2px solid; */
+    /* border: 5px solid red; */
 }
 
 .about_me {
@@ -156,7 +165,7 @@ body::-webkit-scrollbar {
     border-radius: 30px;
     margin-top: 50px;
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
     width: 30%;
     height: auto;
     border: 2px solid;
@@ -166,7 +175,7 @@ body::-webkit-scrollbar {
 
 /* Project */
 .project {
-    /* border: 2px solid; */
+    /* border: 5px solid red; */
     max-width: 80%;
     margin: auto;
     height: 800px;
@@ -180,9 +189,8 @@ body::-webkit-scrollbar {
 }
 
 .content_project {
-    /* border: 2px solid black; */
+    /* border: 5px solid red; */
     /* width: 400px; */
-    text-align: center;
     /* background-image: url("img\animate\cropped-3840-2160-1321959.png"); */
     color: #FFF2EF;
     display: flex;
@@ -190,16 +198,16 @@ body::-webkit-scrollbar {
 }
 
 .project_card {
-    /* border: 2px red; */
-    border-radius: 30px;
+    /* border: 5px red; */
+    border-radius: 20px;
     width: 400px;
-    padding: 25px 10px;
+    padding: 20px 15px;
     margin: 20px 10px;
     background-color: #1A2A4F;
 }
 
 .project_card img {
-    border-radius: 30px;
+    border-radius: 10px;
     border: 6px solid #FFF2EF;
 }
 
@@ -211,7 +219,7 @@ body::-webkit-scrollbar {
 
 /* Skills */
 .skills_container {
-    /* border: 2px solid; */
+    /* border: 5px solid red; */
     max-width: 80%;
     text-align: center;
     margin: auto;
@@ -302,6 +310,35 @@ li.html::after {
     height: 800px;
 }
 
+.feedback {
+    /* border: 5px solid red; */
+    height: 68px;
+    margin-bottom: 25px;
+    /* align-items: center; */
+    background-color: #1A2A4F;
+    line-height: 68px;
+    color: #FFF2EF;
+    padding: 0 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.feedback span {
+    font-size: 1.8rem;
+    margin-left: 66%;
+    cursor: pointer;
+}
+
+div.enabled {
+    display: block;
+}
+
+.form_header {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2.5rem;
+}
+
 .entryarea {
     position: relative;
     height: 80px;
@@ -351,6 +388,40 @@ input:valid+.labelline {
     padding: 0 12px;
     transform: translate(-15px, -16px) scale(0.88);
     z-index: 1111;
+}
+
+.submit {
+    font-size: 2rem;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1A2A4F;
+    color: #FFF2EF;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.loader {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #FFF2EF;
+    animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+
 }
 
 @keyframes html {

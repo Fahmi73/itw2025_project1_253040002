@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 .container {
     /* position: fixed; */
-    max-width: 80%;
+    width: 80%;
     margin: auto;
     position: relative;
     /* border: 5px solid red; */
@@ -36,6 +36,19 @@ body::-webkit-scrollbar {
     font-size: 25px;
     color: #1A2A4F;
     text-decoration: none;
+    text-shadow: 3px 2px 5px #00000042;
+    transition: .3s ease;
+}
+
+.contact2 {
+    display: none;
+}
+
+.container ul li a:hover {
+    background-color: #1A2A4F;
+    padding: 6px 8px;
+    border-radius: 50px;
+    color: #FFF2EF;
 }
 
 
@@ -49,13 +62,13 @@ body::-webkit-scrollbar {
 }
 
 
-.nav_menu_toggle {
+.nav_menu {
     width: 60%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.nav_menu_toggle li {
+.nav_menu li {
     list-style: none;
 }
 
@@ -64,18 +77,22 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.menubtn {
+    /* border: 5px solid red; */
+    position: relative;
+}
+
 .menubtn input {
     opacity: 0;
     z-index: 2;
-    position: fixed;
-    margin-left: -35px;
-    width: 35px;
+    width: px;
     height: 35px;
+    display: none;
 }
 
 .container .contactbtn,
 .container .logo {
-    box-shadow: 3px 3px 5px #00000078;
+    box-shadow: 2px 3px 5px #00000078;
     padding: 10px 15px;
     background-color: #1A2A4F;
     color: #FFF2EF;
@@ -86,6 +103,7 @@ body::-webkit-scrollbar {
 .logo:hover,
 .contactbtn:hover {
     background-color: hsl(222, 50%, 31%);
+    padding: 12px 17px;
 }
 
 /* Akhir Navbar */
@@ -161,6 +179,7 @@ body::-webkit-scrollbar {
 .box_about {
     color: #FFF2EF;
     background-color: #1A2A4F;
+    box-shadow: 2px 3px 10px #00000072;
     padding: 30px;
     border-radius: 30px;
     margin-top: 50px;
@@ -168,7 +187,12 @@ body::-webkit-scrollbar {
     text-align: left;
     width: 30%;
     height: auto;
-    border: 2px solid;
+    transition: .3s ease;
+    /* border: 2px solid; */
+}
+
+.box_about:hover {
+    background-color: hsl(222, 50%, 31%);
 }
 
 /* akhir about */
@@ -458,4 +482,115 @@ li.RJS::after {
     to {
         width: 35%;
     }
+}
+
+/* akhir form */
+
+@media screen and (max-width: 600px) {
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* navbar */
+    .container {
+        /* border: 5px solid red; */
+        background-color: #1A2A4F;
+        justify-content: space-between;
+        top: 0;
+        z-index: 1;
+        padding: 10px 20px;
+        margin: 0;
+        width: 100%;
+        height: 85px;
+        position: fixed;
+        /* z-index: 2; */
+    }
+
+    .container .logo {
+        background-color: #1A2A4F;
+        color: #FFF2EF;
+        box-shadow: 2px 1px 5px #FFF2EF;
+    }
+
+    .nav_menu {
+        /* display: none; */
+        /* opacity: 0; */
+        position: absolute;
+        /* border: 5px solid blue; */
+        /* background-color: white; */
+        width: 30%;
+        /* height: 100vh; */
+        margin: 0;
+        top: 85px;
+        right: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #FFDBB6;
+        border-left: 3px solid #1A2A4F;
+        border-bottom: 3px solid #1A2A4F;
+        border-bottom-left-radius: 10px;
+        transition: 1.3s ease;
+        transform: translateX(calc(200%));
+        /* position: absolute; */
+    }
+
+    .slide {
+        /* opacity: 1; */
+        transform: translateY(0);
+    }
+
+    .contact2,
+    .nav_skills,
+    .nav_project,
+    .nav_about,
+    .nav_home {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ri-menu-2-fill {
+        display: block;
+        font-size: 2.5rem;
+        color: #FFF2EF;
+    }
+
+    .contactbtn {
+        display: none;
+    }
+
+    .menubtn input {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .logo:hover {
+        background-color: hsl(222, 50%, 31%);
+        padding: 12px 17px;
+        margin: 10px 0;
+
+    }
+
+    .container ul li a {
+        width: 100%;
+        /* border: 5px solid red; */
+        padding: 20px 20px;
+        text-align: left;
+    }
+
+    .container ul li a:hover {
+        background-color: #1A2A4F;
+        width: 100%;
+        height: 100%;
+        padding: 25px 25px;
+        border-radius: 0;
+        color: #FFF2EF;
+    }
+
+    /* akhir navbar */
 }

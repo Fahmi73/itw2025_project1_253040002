@@ -14,25 +14,26 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
-<body id="Home">
+<body id="home">
 
     <!-- Navbar -->
     <nav>
         <div class="container">
             <a href="https://www.instagram.com/stoicme_/" class="logo">Hamdani</a>
 
-            <ul class="nav_menu_toggle">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#skills">Skills</a></li>
+            <ul class="nav_menu">
+                <li class="nav_home"><a href="#home">Home</a></li>
+                <li class="nav_about"><a href="#about">About</a></li>
+                <li class="nav_project"><a href="#project">Project</a></li>
+                <li class="nav_skills"><a href="#skills">Skills</a></li>
+                <li class="contact2"><a href="https://www.instagram.com/stoicme_/">Contact</a></li>
             </ul>
 
             <a href="https://www.instagram.com/stoicme_/" class="contactbtn">Contact</a>
 
             <div class="menubtn">
                 <i class="ri-menu-2-fill"></i>
-                <input type="checkbox">
+                <input type="checkbox" class="invis_checbox">
             </div>
 
         </div>
@@ -220,7 +221,8 @@
                 .catch(error => {
                     console.error('Error!', error.message);
                     btnSubmit.innerHTML = "Done";
-                    alert.innerHTML = "<h3><strong>Mengirim Pesan Gaga!</strong> Pesan Anda Tidak Terkirim. <span class='closeAlert'>X</span></h3>";
+                    alert.classList.toggle('enabled');
+                    alert.innerHTML = "<h3><strong>Mengirim Pesan Gagal!</strong> Pesan Anda Tidak Terkirim. <span class='closeAlert'>X</span></h3>";
                     setTimeout(() => {
                         btnSubmit.innerHTML = "Submit";
                     }, 3000)

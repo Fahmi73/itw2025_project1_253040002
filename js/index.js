@@ -1,5 +1,5 @@
-const menuToggle = document.querySelector('.ri-menu-2-fill');
-const listMenu = document.querySelector('.nav_menu_toggle');
+const menuToggle = document.querySelector('.invis_checbox');
+const listMenu = document.querySelector('.nav_menu');
 const feedbackAlert = document.querySelector('.feedback');
 const closeBtn = document.querySelector('.closeAlert');
 

@@ -492,7 +492,7 @@ li.RJS::after {
 @media screen and (max-width: 576px) {
 
     body {
-        border: 5px solid red;
+        /* border: 5px solid red; */
         position: relative;
         /* overflow-x: hidden; */
     }

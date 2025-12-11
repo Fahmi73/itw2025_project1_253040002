@@ -685,10 +685,34 @@ li.RJS::after {
     .skills_description {
         width: 100%;
         margin-bottom: 30px;
+        font-size: 1.5rem;
     }
 
     .skills_bar {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /* akhir section skills */
+    .form_container {
+        height: auto;
+    }
+
+    .form_header {
+        font-size: 1.7rem;
+    }
+
+    /* .entryarea {
+        border: 5px solid red;
+    } */
+
+    .labelline {
+        font-size: 1.2rem;
+    }
+
+    .submit {
+        font-size: 1.5rem;
+        width: 120px;
+        padding: 8px 15px;
     }
 }

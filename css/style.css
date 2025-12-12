@@ -6,7 +6,7 @@
 
 body {
     background-color: #FFDBB6;
-    /* border: 5px solid red; */
+    /* border: 5px solid rgb(21, 0, 255); */
     color: #1A2A4F;
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
@@ -21,9 +21,16 @@ body::-webkit-scrollbar {
 
 .container {
     /* position: fixed; */
-    width: 80%;
-    margin: auto;
-    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* text-align: center; */
+    background-color: #FFDBB6;
+    z-index: 2;
+    left: 0;
+    box-shadow: 2px 3px 10px #00000072;
+    right: 0;
+    top: 0;
+    position: fixed;
     /* border: 5px solid red; */
     height: 80px;
     display: flex;
@@ -51,20 +58,22 @@ body::-webkit-scrollbar {
 }
 
 
-.container span {
+/* .container span {
     display: inline-block;
     color: #FFF2F2;
     background-color: #7886C7;
     padding: 15px;
     font-size: 2rem;
     border-radius: 50%;
-}
+} */
 
 
 .nav_menu {
     width: 60%;
     display: flex;
+    margin: auto;
     justify-content: space-evenly;
+    /* border: 5px solid blue; */
 }
 
 .nav_menu li {
@@ -92,7 +101,9 @@ body::-webkit-scrollbar {
 .container .contactbtn,
 .container .logo {
     box-shadow: 2px 3px 5px #00000078;
-    padding: 10px 15px;
+    padding: 15px;
+    width: auto;
+    margin: 0 20px;
     background-color: #1A2A4F;
     color: #FFF2EF;
     border-radius: 50px;
@@ -218,21 +229,23 @@ body::-webkit-scrollbar {
     /* background-image: url("img\animate\cropped-3840-2160-1321959.png"); */
     color: #FFF2EF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .project_card {
     /* border: 5px red; */
     border-radius: 20px;
-    width: 400px;
-    padding: 20px 15px;
+    width: 380px;
+    padding: 20px;
     margin: 20px 10px;
     /* display: none; */
     background-color: #1A2A4F;
 }
 
 .project_card img {
-    width: 360px;
+    width: 340px;
+    /* display: flex; */
+    /* justify-content: center; */
     border-radius: 10px;
     border: 6px solid #FFF2EF;
 }
@@ -250,6 +263,7 @@ body::-webkit-scrollbar {
     text-align: center;
     margin: auto;
     height: 800px;
+    margin-bottom: 50px;
 }
 
 .header_skills {
@@ -277,6 +291,10 @@ body::-webkit-scrollbar {
 
 .skills_description h3 {
     margin-bottom: 30px;
+}
+
+.skills_bar h3 {
+    font-size: 2.5rem;
 }
 
 .skills_bar {
@@ -334,7 +352,7 @@ li.html::after {
     /* border: 2px solid; */
     max-width: 80%;
     margin: auto;
-    height: 800px;
+    height: auto;
 }
 
 .feedback {
@@ -384,7 +402,7 @@ input {
     border: 2px solid #1A2A4F;
     background: transparent;
     transition: 0.1s ease;
-    z-index: 1111;
+    z-index: 1;
 }
 
 input.message {
@@ -403,18 +421,18 @@ input.message {
 
 input:focus,
 input:valid {
-    color: #66ff00;
-    border: 4px solid #66ff00;
+    color: #607B8F;
+    border: 4px solid #607B8F;
 }
 
 input:focus+.labelline,
 input:valid+.labelline {
-    color: #66ff00;
+    color: #607B8F;
     height: 30px;
     line-height: 30px;
     padding: 0 12px;
     transform: translate(-15px, -16px) scale(0.88);
-    z-index: 1111;
+    z-index: 1;
 }
 
 .submit {
@@ -438,6 +456,20 @@ input:valid+.labelline {
     border: 3px solid transparent;
     border-top-color: #FFF2EF;
     animation: an1 1s ease infinite;
+}
+
+/* Animate Keyframe */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 @keyframes an1 {
@@ -487,7 +519,94 @@ li.RJS::after {
     }
 }
 
+/* Akhir Keyframe */
+
 /* akhir form */
+
+.appear {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+
+/* BreakPoint Section Tablet */
+@media screen and (max-width: 1024px) {
+    body {
+        /* border: 5px solid #1A2A4F; */
+    }
+
+    /* navbar */
+    .container {
+        width: 100%;
+    }
+
+    /* akhir navbar */
+
+    /* header */
+    .header {
+        max-width: 100%;
+    }
+
+    /* akhir header */
+
+    /* about */
+    .about_container {
+        max-width: 100%;
+    }
+
+    .about_content {
+        justify-content: space-evenly;
+    }
+
+    /* akhir About */
+
+    /* project */
+    .project {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 150px;
+    }
+
+    .content_project {
+        flex-wrap: wrap;
+        /* border: 5px solid red; */
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .project_card {
+        width: 400px;
+    }
+
+    .project_card img {
+        width: 360px;
+    }
+
+    /* akhir project */
+
+    /* skills */
+
+    .skills_container {
+        height: auto;
+        max-width: 100%;
+        /* border: 5px solid red; */
+    }
+
+    .skills_content {
+        flex-direction: column;
+    }
+
+    .skills_description,
+    .skills_bar {
+        width: 800px;
+    }
+
+}
+
+/* Akhir BreakPoint Tablet */
+
+/* responsive breakpoint mobile*/
 
 @media screen and (max-width: 576px) {
 
@@ -698,8 +817,13 @@ li.RJS::after {
         height: auto;
     }
 
+    /* .input {
+        font-size: 30px;
+    } */
+
     .form_header {
         font-size: 1.7rem;
+
     }
 
     /* .entryarea {

@@ -68,16 +68,16 @@
                     </p>
                 </div>
                 <div class="box_about appear ">
-                    <h3>Who Am I?</h3><br>
+                    <h3>My Hobby?</h3><br>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-                        exercitationem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, libero!
+                        Hobi utama saya adalah berolahraga untuk menjaga kebugaran fisik dan membaca untuk mengasah
+                        wawasan dan pengetahuan baru.
                     </p>
                 </div>
                 <div class="box_about appear ">
-                    <h3>Who Am I?</h3><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-                        exercitationem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, libero!
+                    <h3>Nilai Atau Filosofi Kerja</h3><br>
+                    <p>Saya berorientasi pada solusi, berpegang pada prinsip kode yang bersih, dan selalu
+                        memprioritaskan pengalaman pengguna yang intuitif dan accessible
                     </p>
                 </div>
             </div>
@@ -95,9 +95,9 @@
                 <div class="project_card appear " id="project#1">
                     <img src="img/project1.png" alt="My Project">
                     <div class="project_description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste sint sequi
-                            voluptatibus dolor unde non cumque aliquid at cum hic, vero odio corrupti nesciunt quibusdam
-                            qui labore. Iusto, neque!</p>
+                        <p>Saya membuat Website yang memberikan informasi tentang tanggal, waktu dan hari sekarang
+                            dengan wallpaper anime kesukaan saya
+                            menggunakan JavaScript </p>
                     </div>
                 </div>
 
@@ -170,7 +170,7 @@
             </div>
 
             <div class="feedback">
-                <h3><strong>Terima Kasih!</strong> Pesan Anda Telah Terkirim. <span class="closeAlert">X</span></h3>
+                <h3><strong>Terima Kasih!</strong> Pesan Anda Telah Terkirim.</h3>
             </div>
 
             <div class="entryarea">
@@ -197,6 +197,14 @@
 
     <!-- Akhir Form -->
 
+    <!-- footer -->
+    <footer>
+        <div class="footer_content">
+            <p>Created by Hamdani | &copy; 2025 All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
 
     <script src="js/index.js"></script>
     <script>
@@ -215,18 +223,20 @@
                     alert.classList.toggle('enabled');
                     btnSubmit.innerHTML = "Done";
                     setTimeout(() => {
+                        alert.classList.toggle('enabled');
                         btnSubmit.innerHTML = "Submit";
-                    }, 3000)
+                    }, 5000)
                     form.reset();
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
                     btnSubmit.innerHTML = "Done";
                     alert.classList.toggle('enabled');
-                    alert.innerHTML = "<h3><strong>Mengirim Pesan Gagal!</strong> Pesan Anda Tidak Terkirim. <span class='closeAlert'>X</span></h3>";
+                    alert.innerHTML = "<h3><strong>Mengirim Pesan Gagal!</strong> Pesan Anda Tidak Terkirim.</h3>";
                     setTimeout(() => {
+                        alert.classList.toggle('enabled');
                         btnSubmit.innerHTML = "Submit";
-                    }, 3000)
+                    }, 5000)
                 })
         })
     </script>

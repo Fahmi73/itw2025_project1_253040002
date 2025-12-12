@@ -532,9 +532,6 @@ li.RJS::after {
 
 /* BreakPoint Section Tablet */
 @media screen and (max-width: 1024px) {
-    body {
-        /* border: 5px solid #1A2A4F; */
-    }
 
     /* navbar */
     .container {

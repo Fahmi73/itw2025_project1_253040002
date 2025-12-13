@@ -24,7 +24,7 @@
             <ul class="nav_menu">
                 <li class="nav_home"><a href="#home">Home</a></li>
                 <li class="nav_about"><a href="#about">About</a></li>
-                <li class="nav_project"><a href="#project">Project</a></li>
+                <li class="nav_gallery"><a href="#gallery">Gallery</a></li>
                 <li class="nav_skills"><a href="#skills">Skills</a></li>
                 <li class="contact2"><a href="https://www.instagram.com/stoicme_/">Contact</a></li>
             </ul>
@@ -85,34 +85,34 @@
     </section>
     <!-- akhir About -->
 
-    <!-- Project Study Poject -->
-    <section id="project">
-        <div class="project">
-            <div class="header_project appear ">
-                <h2>My Project</h2>
+    <!-- gallery Study Poject -->
+    <section id="gallery">
+        <div class="gallery">
+            <div class="header_gallery appear ">
+                <h2>My Gallery</h2>
             </div>
-            <div class="content_project">
-                <div class="project_card appear " id="project#1">
-                    <img src="img/project1.png" alt="My Project">
-                    <div class="project_description">
+            <div class="content_gallery">
+                <div class="gallery_card appear" data-tilt data-tilt-glare id="gallery#1">
+                    <img src="img/project1.png" alt="My gallery">
+                    <div class="gallery_description">
                         <p>Saya membuat Website yang memberikan informasi tentang tanggal, waktu dan hari sekarang
                             dengan wallpaper anime kesukaan saya
                             menggunakan JavaScript </p>
                     </div>
                 </div>
 
-                <div class="project_card appear " id="project#2">
-                    <img src="img/project1.png" alt="My Project">
-                    <div class="project_description">
+                <div class="gallery_card appear " data-tilt data-tilt-glare id="gallery#2">
+                    <img src="img/project1.png" alt="My gallery">
+                    <div class="gallery_description">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste sint sequi
                             voluptatibus dolor unde non cumque aliquid at cum hic, vero odio corrupti nesciunt quibusdam
                             qui labore. Iusto, neque!</p>
                     </div>
                 </div>
 
-                <div class="project_card appear " id="project#3">
-                    <img src="img/project1.png" alt="My Project">
-                    <div class="project_description">
+                <div class="gallery_card appear " data-tilt data-tilt-glare id="gallery#3">
+                    <img src="img/project1.png" alt="My gallery">
+                    <div class="gallery_description">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste sint sequi
                             voluptatibus dolor unde non cumque aliquid at cum hic, vero odio corrupti nesciunt quibusdam
                             qui labore. Iusto, neque!</p>
@@ -121,7 +121,7 @@
             </div>
         </div>
     </section>
-    <!-- Akhir Project -->
+    <!-- Akhir gallery -->
 
     <!-- Skills -->
     <section id="skills">
@@ -165,7 +165,7 @@
     <form action="" name="portofolio-contanct-form">
         <div class="form_container">
 
-            <div class="form_header">
+            <div class="form_header appear">
                 <h2>Write Me a Message</h2>
             </div>
 
@@ -173,25 +173,25 @@
                 <h3><strong>Terima Kasih!</strong> Pesan Anda Telah Terkirim.</h3>
             </div>
 
-            <div class="entryarea">
+            <div class="entryarea appear">
                 <input type="text" required name="nama">
                 <div class="labelline">
                     Enter Your Name.
                 </div>
             </div>
-            <div class="entryarea">
+            <div class="entryarea appear">
                 <input type="email" required name="email">
                 <div class="labelline">
                     Enter Your email.
                 </div>
             </div>
-            <div class="entryarea">
+            <div class="entryarea appear">
                 <input class="message" type="text" required name="pesan">
                 <div class="labelline">
                     Message.
                 </div>
             </div>
-            <button type="submit" class="submit">Submit</button>
+            <button type="submit" class="submit appear">Submit</button>
         </div>
     </form>
 
@@ -240,6 +240,7 @@
                 })
         })
     </script>
+    <script src="js/vanila_tilt.js"></script>
 </body>
 
 </html>

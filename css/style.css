@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
     margin-top: 50px;
     font-size: 1.6rem;
     text-align: left;
-    width: 30%;
+    max-width: 30%;
     height: auto;
     transition: .3s ease;
     /* border: 2px solid; */
@@ -208,22 +208,22 @@ body::-webkit-scrollbar {
 
 /* akhir about */
 
-/* Project */
-.project {
+/* gallery */
+.gallery {
     /* border: 5px solid red; */
     max-width: 80%;
     margin: auto;
     height: 800px;
 }
 
-.header_project {
+.header_gallery {
     text-align: center;
     margin-bottom: 60px;
     font-size: 2.5rem;
     font: bold;
 }
 
-.content_project {
+.content_gallery {
     /* border: 5px solid red; */
     /* width: 400px; */
     /* background-image: url("img\animate\cropped-3840-2160-1321959.png"); */
@@ -233,29 +233,29 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
 }
 
-.project_card {
+.gallery_card {
     /* border: 5px red; */
     border-radius: 20px;
-    width: 380px;
+    max-width: 380px;
     padding: 20px;
     margin: 20px 10px;
     /* display: none; */
     background-color: #1A2A4F;
 }
 
-.project_card img {
-    width: 340px;
+.gallery_card img {
+    max-width: 340px;
     /* display: flex; */
     /* justify-content: center; */
     border-radius: 10px;
     border: 6px solid #FFF2EF;
 }
 
-.project_description {
+.gallery_description {
     margin-top: 10px;
 }
 
-/* Akhir Project */
+/* Akhir gallery */
 
 /* Skills */
 .skills_container {
@@ -274,7 +274,7 @@ body::-webkit-scrollbar {
 .skills_content {
     display: flex;
     /* display: none; */
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .skills_description {
@@ -564,37 +564,44 @@ li.RJS::after {
     /* about */
     .about_container {
         max-width: 100%;
+        height: auto;
+        margin-bottom: 150px;
     }
 
     .about_content {
         justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .box_about {
+        max-width: 40%;
     }
 
     /* akhir About */
 
-    /* project */
-    .project {
+    /* gallery */
+    .gallery {
         max-width: 100%;
         height: auto;
         margin-bottom: 150px;
     }
 
-    .content_project {
+    .content_gallery {
         flex-wrap: wrap;
         /* border: 5px solid red; */
         width: 100%;
         margin-bottom: 50px;
     }
 
-    .project_card {
-        width: 400px;
+    .gallery_card {
+        min-width: 40%;
     }
 
-    .project_card img {
-        width: 360px;
+    .gallery_card img {
+        max-width: 100%;
     }
 
-    /* akhir project */
+    /* akhir gallery */
 
     /* skills */
 
@@ -605,13 +612,25 @@ li.RJS::after {
     }
 
     .skills_content {
-        flex-direction: column;
+        flex-direction: space-evenly;
+        flex-wrap: wrap;
     }
 
-    .skills_description,
-    .skills_bar {
-        width: 800px;
+    .skills_description {
+        min-width: 40%;
     }
+
+    .skills_bar {
+        min-width: 40%;
+    }
+
+    .appear {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+    }
+
+
 
 }
 
@@ -681,7 +700,7 @@ li.RJS::after {
 
     .contact2,
     .nav_skills,
-    .nav_project,
+    .nav_gallery,
     .nav_about,
     .nav_home {
         display: flex;
@@ -761,25 +780,25 @@ li.RJS::after {
     }
 
     .box_about {
-        width: 90%;
+        max-width: 90%;
         margin-bottom: 20px;
 
     }
 
     /* akhir section about */
 
-    /* section Project */
-    .project {
+    /* section gallery */
+    .gallery {
         height: auto;
         /* flex-direction: column; */
     }
 
-    .header_project {
+    .header_gallery {
         font-size: 1.7rem;
         text-align: center;
     }
 
-    .content_project {
+    .content_gallery {
         flex-direction: column;
         /* border: 5px solid red; */
         border-radius: 20px;
@@ -787,23 +806,23 @@ li.RJS::after {
         width: 100%;
     }
 
-    .content_project img {
+    .content_gallery img {
         width: 100%;
         border-radius: 20px;
     }
 
-    .project_card {
+    .gallery_card {
         margin: auto;
-        width: 90%;
+        max-width: 90%;
         margin-bottom: 30px;
     }
 
-    .project_description p {
+    .gallery_description p {
         width: 100%;
         /* border: 5px solid red; */
     }
 
-    /* akhir project section */
+    /* akhir gallery section */
 
     /* section skills */
     .skills_container {
@@ -815,7 +834,7 @@ li.RJS::after {
     }
 
     .skills_content {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .skills_description {

@@ -799,6 +799,8 @@ li.RJS::after {
 
     .header_content {
         margin-top: 50px;
+        text-align: justify;
+        margin-right: 10px;
     }
 
     .header_content h1 {

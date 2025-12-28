@@ -9,6 +9,7 @@ body {
     background-color: #ffdbb6;
     color: #1a2a4f;
     font-family: "Varela Round", sans-serif;
+    margin: 0;
     font-weight: 400;
     font-style: normal;
     text-shadow: 2px 2px 2px white;
@@ -41,6 +42,12 @@ body::-webkit-scrollbar {
 .container a {
     font-size: 23px;
     color: #1a2a4f;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "GRAD" 0;
     text-decoration: none;
     /* text-shadow: 3px 2px 5px #00000042; */
     transition: 0.3s ease;
@@ -131,6 +138,13 @@ body::-webkit-scrollbar {
     text-shadow: 2px 2px black;
 }
 
+.head .sub_judul {
+    font-family: "Ephesis", cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: normal;
+}
+
 .header_image {
     max-width: 360px;
 }
@@ -181,10 +195,12 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 1000px;
     display: flex;
-    margin-bottom: 200px;
     justify-content: space-evenly;
     align-items: center;
-    scroll-margin-top: -120px;
+    background-color: #D2DCB6;
+    border-top: 3px solid #1a2a4f;
+    border-bottom: 3px solid #1A2A4F;
+    scroll-margin-top: 60px;
 }
 
 .about_container {
@@ -193,19 +209,22 @@ body::-webkit-scrollbar {
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .inner_container_about {
     width: 80%;
+    margin-top: 100px;
 }
 
 
 .about_me {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 300;
+    font-style: italic;
     width: 400px;
-    margin-left: 20px;
+    margin-left: 22px;
     text-align: left;
 }
 
@@ -242,33 +261,98 @@ body::-webkit-scrollbar {
     text-align: justify;
 }
 
+
+.about_background {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.background_content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.background_item {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background_header {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.background_logo {
+    background-color: #1a2a4f;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100px;
+    border-radius: 100%;
+    height: 100px;
+    padding: 60px;
+}
+
+.background_logo img {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.background_title {
+    text-align: center;
+}
+
+.sekat_background {
+    display: block;
+    width: 50%;
+    background-color: #1a2a4f;
+    height: 1px;
+    margin: 10px 0;
+}
+
+.background_decsription {
+    text-align: center;
+}
+
+.background_decsription h4 {
+    margin-bottom: 5px;
+}
+
 /* akhir about */
 
 /* project */
 #project {
     width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    scroll-margin-top: -160px;
+    border-bottom: 3px solid #1A2A4F;
+    height: 600px;
+    scroll-margin-top: 20px;
 }
 
 .project {
     width: 100%;
-    height: 100vh;
-    margin: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .header_project {
     text-align: center;
     margin-bottom: 15px;
     font-size: 1.4rem;
+    margin-top: 100px;
     font: bold;
 }
 
@@ -318,6 +402,8 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #D2DCB6;
+    border-bottom: 3px solid #1A2A4F;
     scroll-margin-top: -90px;
 
 }
@@ -376,12 +462,14 @@ body::-webkit-scrollbar {
 #contact {
     width: 100%;
     height: 800px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: -70px;
+    display: flex;
 }
 
 .form_container {
-    max-width: 70%;
+    width: 60%;
     margin: auto;
+    padding: 100px;
     height: auto;
 }
 
@@ -587,7 +675,7 @@ li.RJS::after {
 
     /* about */
     #about {
-        height: 800px;
+        height: 1200px;
     }
 
     .about_container {
@@ -625,15 +713,17 @@ li.RJS::after {
     #project {
         width: 100%;
         height: auto;
-        margin: 70px 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-color: #FFF2EF;
     }
 
     .project {
         max-width: 100%;
         height: auto;
+        margin-bottom: 100px;
     }
 
     .content_project {
@@ -653,6 +743,13 @@ li.RJS::after {
     /* akhir project */
 
     /* skills */
+    #skills {
+        height: 1200px;
+    }
+
+    .header_skills {
+        font-size: 1.8rem;
+    }
 
     .skills_container {
         height: auto;
@@ -677,7 +774,15 @@ li.RJS::after {
         animation-timeline: view();
         animation-range: entry 0% cover 20%;
     }
+
+    /* Akhir Skills */
+
+    /* Forms */
+
+    .form_container {}
+
 }
+
 
 /* Akhir BreakPoint Tablet */
 
@@ -801,6 +906,7 @@ li.RJS::after {
         margin-top: 50px;
         text-align: justify;
         margin-right: 10px;
+        margin-left: 15px;
     }
 
     .header_content h1 {
@@ -811,11 +917,11 @@ li.RJS::after {
 
     /* section about */
     #about {
-        height: 1000px;
+        height: auto;
     }
 
     .inner_container_about {
-        margin: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -829,13 +935,12 @@ li.RJS::after {
         font-size: 1.7rem;
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 50px 0;
         text-align: center;
     }
 
     .about_content {
         flex-direction: column-reverse;
-        margin-bottom: 150px;
         flex-wrap: wrap;
         align-items: center;
     }
@@ -845,15 +950,28 @@ li.RJS::after {
         margin-bottom: 20px;
     }
 
+    .background_content {
+        flex-direction: column;
+    }
+
+    .background_item {
+        margin-bottom: 50px;
+    }
+
+    .about_background {
+        margin-top: 50px;
+    }
+
     /* akhir section about */
 
     /* section project */
     #project {
-        height: auto;
+        height: 1400px;
+        margin: 0 0;
     }
 
     .project {
-        height: 100vh;
+        height: 100%;
     }
 
     .header_project {
@@ -916,6 +1034,7 @@ li.RJS::after {
     /* akhir section skills */
     .form_container {
         height: auto;
+        padding: 0;
     }
 
     /* .input {

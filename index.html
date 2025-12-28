@@ -6,13 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamdani's Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- link rel remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- end remixicon -->
+
+    <!-- link rel aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end aos -->
+
+    <!-- link rel google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&family=Varela+Round&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end -->
+
 </head>
 
 <body id="home">
@@ -53,10 +63,7 @@
             <div class="header_content">
                 <h2 class="head">Hello it's me</h2><br>
                 <h1 class="head">I'm <span class="sub_judul">Hamdani</span></h1><br>
-                <p class="p_hero">Junior Web Developer dengan ketertarikan kuat pada Frontend Engineering. <br> Mengubah
-                    ide kreatif
-                    menjadi
-                    baris kode dan solusi digital yang bermanfaat.</p>
+                <p class="p_hero"></p>
                 <br>
 
                 <div class="sosmed_icon">
@@ -80,7 +87,7 @@
                 </div>
 
                 <div class="about_content">
-                    <div class="box_about" data-aos="fade-up-right" data-aos-offset="300" data-aos-duration="1000"
+                    <div class="box_about" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
                         data-aos-delay="100">
                         <h2 class="sub_judul">Mari Berkenalan Dengan Saya!</h2><br>
                         <p>Saya adalah mahasiswa Teknik Informatika yang antusias mendalami dunia web development,
@@ -98,9 +105,63 @@
                             masa depan.
                         </p>
                     </div>
-                    <div class="about_img " data-aos="fade-up-left" data-aos-offset="300" data-aos-duration="1000">
+                    <div class="about_img " data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
                         <img src="img/Gemini_Generated_Image_8lxzgz8lxzgz8lxz-removebg-preview.png"
                             alt="Orang bersalaman">
+                    </div>
+                </div>
+            </div>
+            <div class="about_background">
+                <div class="background_header" data-aos="fade-up">
+                    <h2>Background</h2>
+                </div>
+                <div class="background_content" data-aos="fade-up">
+                    <div class="background_item">
+                        <div class="background_logo">
+                            <img src="img/icon/images.png" alt="">
+                        </div>
+                        <div class="background_title">
+                            <h3>UNIVERSITAS PASUNDAN</h3>
+                        </div>
+                        <span class="sekat_background"></span>
+                        <div class="background_decsription">
+                            <h4>
+                                Informatic Enggineering Student
+                            </h4>
+                            <p>2025 - Present</p>
+                        </div>
+                    </div>
+
+                    <div class="background_item">
+                        <div class="background_logo">
+                            <img src="img/icon/Gemini_Generated_Image_n0igdcn0igdcn0ig-removebg-preview.png" alt="">
+                        </div>
+                        <div class="background_title">
+                            <h3>SMAN 2 INDRAMAYU</h3>
+                        </div>
+                        <span class="sekat_background"></span>
+                        <div class="background_decsription">
+                            <h4>
+                                HIGHSCHOOL STUDENT
+                            </h4>
+                            <p>2022 - 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="background_item">
+                        <div class="background_logo">
+                            <img src="img/icon/Gemini_Generated_Image_4ve84g4ve84g4ve8-removebg-preview.png" alt="">
+                        </div>
+                        <div class="background_title">
+                            <h3>SMPN 4 SINDANG</h3>
+                        </div>
+                        <span class="sekat_background"></span>
+                        <div class="background_decsription">
+                            <h4>
+                                MIDDLE SCHOOL STUDENT
+                            </h4>
+                            <p>2019 - 2022</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,7 +172,7 @@
     <!-- project Study Poject -->
     <section id="project">
         <div class="project">
-            <div class="header_project appear ">
+            <div class="header_project">
                 <h2>My Latest Project</h2>
                 <p>Here is some Project i've been worked on</p>
             </div>
@@ -143,19 +204,20 @@
     <!-- Skills -->
     <section id="skills">
         <div class="skills_container">
-            <div class="header_skills appear ">
+            <div class="header_skills" data-aos="fade-up" data-aos-offset="400">
                 <h2>Skills & Tools</h2>
                 <p>Skills & Tools I Master</p>
             </div>
-            <div class="skills_content">
-                <div class="skills_description appear " data-aos="flip-right" data-aos-duration="500">
+            <div class="skills_content" data-aos="fade-up">
+                <div class="skills_description" data-aos="flip-right" data-aos-duration="500" data-aos-offset="300"
+                    data-aos-delay="50">
                     <img width="96" height="96" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1" />
                     <h3>HTML5</h3>
                     <p>Struktur</p>
                 </div>
 
-                <div class="skills_description appear " data-aos="flip-right" data-aos-duration="500"
-                    data-aos-delay="100">
+                <div class="skills_description " data-aos="flip-right" data-aos-duration="500" data-aos-delay="100"
+                    data-aos-offset="300">
                     <img width="96" height="96" src="https://img.icons8.com/fluency/96/javascript.png"
                         alt="javascript" />
                     <h3>JAVASCRIPT</h3>
@@ -163,23 +225,23 @@
                 </div>
 
 
-                <div class="skills_description appear " data-aos="flip-right" data-aos-duration="500"
-                    data-aos-delay="200">
+                <div class="skills_description" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200"
+                    data-aos-offset="300">
                     <img width="96" height="96" src="https://img.icons8.com/color/96/css3.png" alt="css3" />
                     <h3>CSS3</h3>
                     <p>Design & Styling</p>
                 </div>
 
-                <div class="skills_description appear " data-aos="flip-right" data-aos-duration="500"
-                    data-aos-delay="300">
+                <div class="skills_description" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300"
+                    data-aos-offset="300">
                     <img width="96" height="96" src="https://img.icons8.com/nolan/96/bootstrap.png" alt="bootstrap" />
                     <h3>BOOSTRAP 5</h3>
                     <p>Framework</p>
                 </div>
 
 
-                <div class="skills_description appear " data-aos="flip-right" data-aos-duration="500"
-                    data-aos-delay="400">
+                <div class="skills_description" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400"
+                    data-aos-offset="400">
                     <img width="96" height="96" src="https://img.icons8.com/color/96/tailwind_css.png"
                         alt="tailwind_css" />
                     <h3>TAILWIND CSS</h3>
@@ -194,7 +256,7 @@
 
     <!-- Form -->
     <form action="" id="contact" name="portofolio-contanct-form">
-        <div class="form_container appear">
+        <div class="form_container" data-aos="fade-up">
 
             <div class="form_header ">
                 <h2>Write Me a Message</h2>
@@ -286,7 +348,12 @@
         gsap.registerPlugin(TextPlugin)
         gsap.from('.container', { duration: 1.5, y: -100, ease: "bounce.out" })
         gsap.from('.head', { duration: 1, x: -50, ease: "back.out" })
-        gsap.from('p_hero', { duration: 1, delay: 0.5, text: '' })
+        gsap.to('.p_hero', {
+            duration: 5, delay: 0, text: {
+                value: "Junior Web Developer dengan ketertarikan kuat pada Frontend Engineering.<br> Mengubah ide kreatif menjadi baris kode dan solusi digital yang bermanfaat.",
+                delimiter: ""
+            }
+        })
     </script>
 </body>
 

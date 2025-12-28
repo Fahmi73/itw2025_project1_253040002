@@ -6,8 +6,27 @@ Berikut adalah link website saya yang bisa Anda Kunjungi:
 <br>
 
 Asset Font yang saya gunakan dalam Website ini:
-Ephesis dan Montserrat (google font): <br>
-https://fonts.google.com/share?selection.family=Ephesis|Montserrat:ital,wght@0,100..900;1,100..900
+Ephesis, Montserrat, Shadow Into Light two, Valera Round, Google sans, IBM Plex Serif (google font): <br>
+https://fonts.google.com/share?selection.family=Ephesis|Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700|IBM+Plex+Serif:ital,wght@1,300|Montserrat:ital,wght@0,100..900;1,100..900|Shadows+Into+Light+Two|Varela+Round
 
-Asset Hamburger Icon from RemixIcon: <br>
+Used Icon from RemixIcon: <br>
 https://remixicon.com/icon/menu-2-line
+
+https://remixicon.com/icon/github-fill
+
+https://remixicon.com/icon/facebook-circle-fill
+
+https://remixicon.com/icon/instagram-line
+
+
+Used Icon From Icon8: <br>
+
+https://icons8.com/icon/PXTY4q2Sq2lG/javascript
+
+https://icons8.com/icon/21278/css3
+
+https://icons8.com/icon/ZMc42tPbG32H/bootstrap
+
+https://icons8.com/icon/20909/html-5
+
+https://icons8.com/icon/4PiNHtUJVbLs/tailwind-css

@@ -812,10 +812,8 @@ li.RJS::after {
         background-color: #1a2a4f;
         justify-content: space-between;
         top: 0;
-        left: 0;
         z-index: 3;
-        padding: 10px 20px;
-        margin: auto;
+        padding: 0 20px;
         width: 100%;
         height: 85px;
         position: fixed;
@@ -825,6 +823,7 @@ li.RJS::after {
         background-color: #1a2a4f;
         color: #fff2ef;
         box-shadow: 2px 1px 5px #fff2ef;
+        margin: 0;
     }
 
     .nav_menu {
@@ -888,11 +887,6 @@ li.RJS::after {
         padding: 20px 20px;
         text-align: left;
         position: relative;
-    }
-
-    .container ul li a:hover+.underline {
-        width: 100%;
-        height: 2px;
     }
 
     /* akhir section navbar */

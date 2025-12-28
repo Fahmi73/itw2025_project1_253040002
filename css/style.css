@@ -799,7 +799,7 @@ li.RJS::after {
         justify-content: space-between;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 3;
         padding: 10px 20px;
         margin: auto;
         width: 100%;
@@ -815,7 +815,7 @@ li.RJS::after {
 
     .nav_menu {
         position: absolute;
-        width: 30%;
+        width: 50%;
         margin: 0;
         top: 85px;
         right: 0;
@@ -826,7 +826,7 @@ li.RJS::after {
         border-bottom: 3px solid #1a2a4f;
         border-bottom-left-radius: 10px;
         transition: 1.3s ease;
-        transform: translateX(calc(200%));
+        transform: translateX(calc(210%));
     }
 
     .slide {
@@ -1041,6 +1041,7 @@ li.RJS::after {
     /* akhir section skills */
     .form_container {
         height: auto;
+        width: 90%;
         padding: 0;
     }
 

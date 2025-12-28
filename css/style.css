@@ -902,6 +902,13 @@ li.RJS::after {
         max-width: 280px;
     }
 
+    .head .sub_judul {
+        font-family: "Ephesis", cursive;
+        font-weight: 400;
+        font-size: 1.8rem;
+        font-style: normal;
+    }
+
     .header_content {
         margin-top: 50px;
         text-align: justify;

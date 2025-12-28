@@ -57,12 +57,31 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.container ul li a:hover {
-    background-color: #1a2a4f;
-    text-shadow: 2px 2px 5px black;
-    padding: 6px 8px;
-    border-radius: 50px;
-    color: #fff2ef;
+.nav_menu li {
+    list-style: none;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    opacity: 1;
+    background-color: #1A2A4F;
+    transition: 0.3s ease;
+    border-radius: 2pxi;
+}
+
+.nav_menu li a:hover+.underline {
+    width: 100%;
+    height: 2px;
+}
+
+.nav_menu li a:active+.underline {
+    width: 100%;
+    height: 2px;
 }
 
 .nav_menu {
@@ -70,10 +89,6 @@ body::-webkit-scrollbar {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-}
-
-.nav_menu li {
-    list-style: none;
 }
 
 .ri-menu-2-fill {
@@ -479,6 +494,7 @@ body::-webkit-scrollbar {
     background-color: #1a2a4f;
     line-height: 68px;
     color: #fff2ef;
+    text-shadow: 2px 2px 5px black;
     padding: 0 20px;
     border-radius: 10px;
     display: none;
@@ -779,8 +795,6 @@ li.RJS::after {
 
     /* Forms */
 
-    .form_container {}
-
 }
 
 
@@ -873,15 +887,12 @@ li.RJS::after {
         width: 100%;
         padding: 20px 20px;
         text-align: left;
+        position: relative;
     }
 
-    .container ul li a:hover {
-        background-color: #1a2a4f;
+    .container ul li a:hover+.underline {
         width: 100%;
-        height: 100%;
-        padding: 25px 25px;
-        border-radius: 0;
-        color: #fff2ef;
+        height: 2px;
     }
 
     /* akhir section navbar */
@@ -891,7 +902,6 @@ li.RJS::after {
     #hero {
         width: 100%;
     }
-
 
     .header_image {
         max-width: 300px;
@@ -1067,7 +1077,8 @@ li.RJS::after {
     .feedback {
         font-size: 1.2rem;
         height: 83px;
-        margin-top: -40px;
+        width: 100%;
+        margin-top: 40px;
         line-height: 40px;
     }
 
@@ -1075,5 +1086,9 @@ li.RJS::after {
         animation: appear linear;
         animation-timeline: view();
         animation-range: entry 0% cover 25%;
+    }
+
+    .user_input {
+        font-size: 22px;
     }
 }
